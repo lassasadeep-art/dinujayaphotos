@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FOCUS EYE | Luxury Wedding Photography Portfolio</title>
+    <meta name="description" content="Capture the poetry of your love story. Elegant, minimalist, and luxury wedding photography for modern couples worldwide. Specialize in candid, traditional, and editorial portraits.">
+    <!-- Google Fonts: Cormorant Garamond (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo" id="brandLogo">
+                <span class="logo-main">THE FOCUS EYE</span>
+                <span class="logo-sub">PHOTOGRAPHY</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Inquire</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <ul class="mobile-nav-links">
+            <li><a href="#" class="mobile-link">Home</a></li>
+            <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#contact" class="mobile-link">Inquire</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-background" style="background-image: url('assets/hero_wedding.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">CAPTURING ROMANCE WORLDWIDE</span>
+                <h1 class="hero-title">Your Memories, Beautifully Framed</h1>
+                <p class="hero-description">Natural and elegant photography focused on capturing your most authentic and unforgettable moments.</p>
+                <div class="hero-cta-group">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Book a Consultation</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <span class="scroll-arrow"></span>
+        </div>
+    </section>
+
+    <!-- Stats & Editorial Banner -->
+    <section class="stats-banner">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Stories Told</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">Worldwide</span>
+                <span class="stat-label">Destinations</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">Vogue</span>
+                <span class="stat-label">Featured Artist</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">THE GALLERY</span>
+                <h2 class="section-title">Moments Frozen in Time</h2>
+                <div class="section-decor"></div>
+                <p class="section-description">A curated selection of our best wedding photographs, displaying emotional depth, rich traditions, and authentic joy.</p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="gallery-filters" id="galleryFilters">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+                <button class="filter-btn" data-filter="candid">Candid</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_1.jpeg" alt="Wedding Photo 1" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Sigiriya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_2.jpeg" alt="Wedding Photo 2" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_3.jpeg" alt="Wedding Photo 3" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Colombo, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_4.jpeg" alt="Wedding Photo 4" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_5.jpeg" alt="Wedding Photo 5" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_6.jpeg" alt="Wedding Photo 6" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Sigiriya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_7.jpeg" alt="Wedding Photo 7" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Colombo, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_8.jpeg" alt="Wedding Photo 8" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Sigiriya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_9.jpeg" alt="Wedding Photo 9" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_10.jpeg" alt="Wedding Photo 10" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_11.jpeg" alt="Wedding Photo 11" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Sigiriya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_12.jpeg" alt="Wedding Photo 12" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_13.jpeg" alt="Wedding Photo 13" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_14.png" alt="Wedding Photo 14" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Bentota, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_15.jpeg" alt="Wedding Photo 15" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Bentota, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_16.jpeg" alt="Wedding Photo 16" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Colombo, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_17.jpeg" alt="Wedding Photo 17" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_18.jpeg" alt="Wedding Photo 18" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_19.jpeg" alt="Wedding Photo 19" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_20.jpeg" alt="Wedding Photo 20" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Colombo, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_21.jpeg" alt="Wedding Photo 21" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Colombo, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_22.jpeg" alt="Wedding Photo 22" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_23.jpeg" alt="Wedding Photo 23" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Nuwara Eliya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_24.jpeg" alt="Wedding Photo 24" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_25.jpeg" alt="Wedding Photo 25" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Bentota, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_26.jpeg" alt="Wedding Photo 26" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Colombo, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_27.jpeg" alt="Wedding Photo 27" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Sigiriya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_28.jpeg" alt="Wedding Photo 28" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_29.jpeg" alt="Wedding Photo 29" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Galle, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="unscripted">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_30.jpeg" alt="Wedding Photo 30" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Unscripted Emotion</span>
+                                <h3 class="gallery-item-title">Authentic Love</h3>
+                                <span class="gallery-item-location" style="display:none;">Kandy, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cinematic">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_31.jpeg" alt="Wedding Photo 31" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Cinematic Frames</span>
+                                <h3 class="gallery-item-title">Epic Storytelling</h3>
+                                <span class="gallery-item-location" style="display:none;">Bentota, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-img-wrapper">
+                        <img src="photos/photo_32.jpeg" alt="Wedding Photo 32" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-item-info">
+                                <span class="gallery-item-tag">Fine Art Portraits</span>
+                                <h3 class="gallery-item-title">Editorial Elegance</h3>
+                                <span class="gallery-item-location" style="display:none;">Sigiriya, Sri Lanka</span>
+                                <span class="gallery-view-cta">View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Immersive Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-details">
+                <span class="lightbox-category" id="lightboxCategory">Traditional</span>
+                <h3 class="lightbox-title" id="lightboxTitle">Aarav &amp; Aditi</h3>
+                <p class="lightbox-location" id="lightboxLocation">Jaipur, India</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                
+                <!-- About Image Frame -->
+                <div class="about-img-container">
+                    <div class="gold-frame-accent"></div>
+                    <img src="assets/photographer.png" alt="Dinujaya, passionate photographer" class="about-img" loading="lazy">
+                </div>
+
+                <!-- About Content -->
+                <div class="about-content">
+                    <span class="section-subtitle">THE ARTIST</span>
+                    <h2 class="section-title">Hi, I'm Dinujaya</h2>
+                    <div class="section-decor left"></div>
+                    
+                    <p class="about-lead">I am a passionate photographer and visual storyteller.</p>
+                    
+                    <p class="about-text">
+                        I am a passionate and driven media professional with a strong foundation in Film and Television Studies. With hands-on training in television production and technology, I specialize in creating engaging content, scriptwriting, and video editing. I am looking to contribute my creative skills and leadership to exciting media projects.
+                    </p>
+
+                    <!-- Signature or elegant detail -->
+                    <div class="about-signature">
+                        <span class="signature-text">Dinujaya</span>
+                        <span class="signature-title">Media Professional / Creator</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Resume/Qualifications Details -->
+            <div class="resume-section" style="margin-top: 5rem;">
+                <div class="resume-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                    
+                    <!-- Education -->
+                    <div class="resume-block">
+                        <h3 style="color: var(--color-gold); font-size: 1.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid var(--color-gold-alpha); padding-bottom: 0.5rem;">Education & Qualifications</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">BachelorÃ¢â‚¬â„¢s Degree in Film & Television Studies</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">University of Kelaniya (Undergraduate)</span>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">Certificate in TV Program Production & Technology</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">MCRU Mass Communication and Research Unit, Media Bureau Sri Dalada Maligawa (2025)</span>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">G.C.E. A/L & O/L Examinations</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">Successfully Completed</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="resume-block">
+                        <h3 style="color: var(--color-gold); font-size: 1.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid var(--color-gold-alpha); padding-bottom: 0.5rem;">Professional Skills</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">Television Production</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">Live and recorded TV program productions</span>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">Creative Direction</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">Scriptwriting, film directing, and producing</span>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">Post-Production</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">Video Editing</span>
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">Soft Skills</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">Leadership, planning, presentation (English & Sinhala)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Extracurricular -->
+                    <div class="resume-block">
+                        <h3 style="color: var(--color-gold); font-size: 1.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid var(--color-gold-alpha); padding-bottom: 0.5rem;">Extracurricular Activities</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;">
+                                <strong style="color: var(--text-primary); display: block; font-weight: 500;">Active Member</strong>
+                                <span style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic;">Art Society & Media Unit, Sivali Central College</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Form -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">LET'S CONNECT</span>
+                <h2 class="section-title">Inquire &amp; Book</h2>
+                <div class="section-decor"></div>
+                <p class="section-description">Spaces are limited to ensure individual attention. We would love to hear your vision for your celebration.</p>
+            </div>
+
+            <div class="contact-card text-center" style="padding: 40px;">
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">Get in touch with us directly through the following platforms:</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/94766828591" target="_blank" class="btn btn-primary" style="display: flex; align-items: center; gap: 10px;">
+                        WhatsApp: 0766 828 591
+                    </a>
+                    <a href="mailto:dinujayasamaraweera1234@gmail.com" class="btn btn-secondary" style="display: flex; align-items: center; gap: 10px;">
+                        Email Us
+                    </a>
+                    <a href="https://www.facebook.com/share/18dpKrVHSo/" target="_blank" class="btn btn-primary" style="display: flex; align-items: center; gap: 10px;">
+                        Facebook Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo">
+                    <span class="logo-main text-white">THE FOCUS EYE</span>
+                    <span class="logo-sub text-gold">PHOTOGRAPHY</span>
+                </a>
+                <p class="footer-tagline">Fine art wedding photography capturing raw emotion and timeless beauty worldwide.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio Gallery</a></li>
+                    <li><a href="#about">About Eleanor</a></li>
+                    <li><a href="#contact">Inquire Today</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <!-- Email -->
+                    <a href="mailto:dinujayasamaraweera1234@gmail.com" aria-label="Email" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-icon">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/94766828591" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-icon">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 2.025 14.12 1 11.49 1a9.87 9.87 0 0 0-9.855 9.804c-.001 1.73.454 3.419 1.32 4.925l-.994 3.635 3.73-.974zM17.41 15.3c-.352-.175-2.083-1.018-2.4-1.132-.317-.116-.549-.175-.78.175-.23.352-.892 1.132-1.094 1.36-.201.23-.404.26-.756.085-.352-.175-1.488-.543-2.834-1.734-1.047-.925-1.753-2.069-1.959-2.42-.206-.352-.021-.543.155-.718.159-.158.352-.405.529-.607.176-.203.235-.348.352-.58.118-.23.059-.434-.03-.609-.088-.175-.78-1.859-1.069-2.557-.281-.678-.567-.587-.78-.598-.201-.01-.433-.012-.664-.012-.23 0-.606.085-.922.434-.317.352-1.212 1.174-1.212 2.863 0 1.688 1.242 3.32 1.414 3.551.173.23 2.443 3.684 5.92 5.168.826.353 1.472.564 1.975.722.83.26 1.584.223 2.18.135.666-.098 2.083-.843 2.378-1.658.296-.814.296-1.511.208-1.658-.088-.146-.323-.233-.675-.408z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/18dpKrVHSo/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-icon">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 THE FOCUS EYE Photography. All rights reserved. Designed & Developed by Lasitha.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
